@@ -8,7 +8,8 @@
 		<header class="main-header">
 			<div class="container">
 				<nav class="main-nav">
-
+					
+					<!-- хедер панель с логотипом -->
 					<div>
 						<span class="logo-header">Техномарт</span>
 						<div class="search-header">
@@ -26,7 +27,8 @@
 								<a href="order.html" class="user-nav-btn-order-active">Оформить заказ</a>
 						</div>
 					</div>
-
+					
+					<!-- хедер панель с телефоном -->
 					<div>
 						<p>
 							Интернет-магазин
@@ -39,19 +41,21 @@
 							<p class="header-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						</div>
 						
-						<section class="header-user">
+						<div class="header-user">
 
 							<div class="header-user-btn">
 								<a href="account.html" class="header-user-name">Пользователь</a>
 							</div>
+
 							<div class="header-user-links">
 								<a href="orders.html" class="header-user-orders">Мои заказы</a>
 								<a href="account.html" class="header-user-account">Личный кабинет</a>
 							</div>
 
-						</section>
-
+						</div>
 					</div>
+
+					<!-- хедер панель навигации -->
 
 					<ul class="site-navigation">
 						<li class="site-navigation-current"><a href="index.html">Главная</a></li>
@@ -70,6 +74,7 @@
 		<!-- основной раздел начало -->
 		<main>
 			<div class="container">
+
 				<ol class="breadcrumbs">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Каталог</a></li>
@@ -82,7 +87,8 @@
 
 				<!-- фильтр начало -->
 				<section class="filter">
-
+					
+					<!-- сортировка товаров -->
 					<div class="filter-sort">
 						<h3>Сортировка:</h3>
 						<button type="button" class="filter-btn-sort filter-btn-sort-active">По цене</button>
@@ -91,7 +97,8 @@
 						<button type="button" class="filter-btn-sort-arrow filter-btn-sort-arrow-active">По возрастанию</button>
 						<button type="button" class="filter-btn-sort-arrow">По убыванию</button>
 					</div>
-
+					
+					<!-- блок фильтров -->
 					<div class="filter-main">
 
 						<h3>Фильтр:</h3>
@@ -102,9 +109,9 @@
 							<input type="range" id="price-range" name="price-range" min="0" max="30000" step="1">
 
 							<div class="filter-price-range">
-								<input type="number" id="min-number" name="min-range" value="0">Минимальная цена</span>
+								<input type="number" id="min-number" name="min-range" value="0">Минимальная цена
 								<span>—</span>
-								<input type="number" id="max-number" name="max-range" value="30000">Максимальная цена</span>
+								<input type="number" id="max-number" name="max-range" value="30000">Максимальная цена
 							</div>
 
 						</div>
@@ -376,6 +383,9 @@
 				
 				<!-- футер верхняя панель -->
 				<section>
+
+				<h2 class="visually-hidden">Техномарт навигация по разделам</h2>
+
 					<div>
 						<a class="logo">Техномарт</a>
 						<ul class="footer-site-navigation">
@@ -404,6 +414,9 @@
 				
 				<!-- футер нижняя панель -->
 				<section>
+
+				<h3 class="visually-hidden">Техномарт в социальных сетях</h3>
+
 					<p class="footer-copyright">
 						© 2010-2017 Компания «Техномарт»<br>
 						Все права защищены

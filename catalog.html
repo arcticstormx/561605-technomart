@@ -102,59 +102,61 @@
 					<div class="filter-main">
 
 						<h3>Фильтр:</h3>
-						
-						<div class="filter-main-price">
 
-							<label for="price-range">Цена:</label>
-							<input type="range" id="price-range" name="price-range" min="0" max="30000" step="1">
+						<form>
+							<div class="filter-main-price">
 
-							<div class="filter-price-range">
-								<input type="number" id="min-number" name="min-range" value="0">Минимальная цена
-								<span>—</span>
-								<input type="number" id="max-number" name="max-range" value="30000">Максимальная цена
+								<label for="price-range">Цена:</label>
+								<input type="range" id="price-range" name="price-range" min="0" max="30000" step="1">
+
+								<div class="filter-price-range">
+									<input type="number" id="min-number" name="min-range" value="0">Минимальная цена
+									<span>—</span>
+									<input type="number" id="max-number" name="max-range" value="30000">Максимальная цена
+								</div>
+
 							</div>
 
+							<hr>
+
+							<div class="filter-main-brands">
+								<fieldset>
+									<legend>Производители:</legend>
+
+									<label for="bosch">Bosch</label>
+									<input type="checkbox" id="bosch" name="Bosch">
+
+									<label for="interskol">Интерскол</label>
+									<input type="checkbox" id="interskol" name="Interskol">
+
+									<label for="makita">Makita</label>
+									<input type="checkbox" id="makita" name="Makita">
+
+									<label for="dewalt">DeWalt</label>
+									<input type="checkbox" id="dewalt" name="DeWalt">
+
+									<label for="hitachi">Hitachi</label>
+									<input type="checkbox" id="hitachi" name="Hitachi">
+								</fieldset>
+							</div>
+							
+							<hr>
+
+							<div class="filter-main-types">
+								<fieldset>
+									<legend>Питание:</legend>
+									<label for="cordless-drill">Аккумуляторные</label>
+									<input type="radio" id="cordless-drill">
+
+									<label for="corded-drill">Сетевые</label>
+									<input type="radio" id="corded-drill">
+								</fieldset>
+							</div>
+
+							<input type="submit" class="btn-filter">Показать</input>
 						</div>
-
-						<hr>
-
-						<div class="filter-main-brands">
-							<fieldset>
-								<legend>Производители:</legend>
-
-								<label for="bosch">Bosch</label>
-								<input type="checkbox" id="bosch" name="Bosch">
-
-								<label for="interskol">Интерскол</label>
-								<input type="checkbox" id="interskol" name="Interskol">
-
-								<label for="makita">Makita</label>
-								<input type="checkbox" id="makita" name="Makita">
-
-								<label for="dewalt">DeWalt</label>
-								<input type="checkbox" id="dewalt" name="DeWalt">
-
-								<label for="hitachi">Hitachi</label>
-								<input type="checkbox" id="hitachi" name="Hitachi">
-							</fieldset>
-						</div>
-						
-						<hr>
-
-						<div class="filter-main-types">
-							<fieldset>
-								<legend>Питание:</legend>
-								<label for="cordless-drill">Аккумуляторные</label>
-								<input type="radio" id="cordless-drill">
-
-								<label for="corded-drill">Сетевые</label>
-								<input type="radio" id="corded-drill">
-							</fieldset>
-						</div>
-
-						<button type="button" class="btn-filter">Показать</button>
-					</div>
-
+					</form>
+					
 				</section>
 				<!-- фильтр конец -->
 

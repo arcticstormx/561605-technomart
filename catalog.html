@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Техномарт каталог</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -10,14 +12,12 @@
 				<nav class="main-nav">
 					
 					<!-- хедер панель с логотипом -->
-					<div>
+					<div class="logo-bar">
 						<span class="logo-header">Техномарт</span>
 						<div class="search-header">
-							<form action="/my-handling-form-page" method="post">
-								<div>
-									<label for="search-nav">Поиск:</label>
-									<input type="text" id="search-nav" name="search">
-								</div>
+							<form action="#" method="get">
+								<label for="search-nav">Поиск:</label>
+								<input type="text" id="search-nav" name="search">
 							</form>
 						</div>
 
@@ -103,7 +103,7 @@
 
 						<h3>Фильтр:</h3>
 
-						<form>
+						<form action="#" method="get">
 							<div class="filter-main-price">
 
 								<label for="price-range">Цена:</label>
@@ -117,43 +117,39 @@
 
 							</div>
 
-							<hr>
-
 							<div class="filter-main-brands">
 								<fieldset>
 									<legend>Производители:</legend>
 
 									<label for="bosch">Bosch</label>
-									<input type="checkbox" id="bosch" name="Bosch">
+									<input type="checkbox" id="bosch" name="manufacturer[]">
 
 									<label for="interskol">Интерскол</label>
-									<input type="checkbox" id="interskol" name="Interskol">
+									<input type="checkbox" id="interskol" name="manufacturer[]">
 
 									<label for="makita">Makita</label>
-									<input type="checkbox" id="makita" name="Makita">
+									<input type="checkbox" id="makita" name="manufacturer[]">
 
 									<label for="dewalt">DeWalt</label>
-									<input type="checkbox" id="dewalt" name="DeWalt">
+									<input type="checkbox" id="dewalt" name="manufacturer[]">
 
 									<label for="hitachi">Hitachi</label>
-									<input type="checkbox" id="hitachi" name="Hitachi">
+									<input type="checkbox" id="hitachi" name="manufacturer[]">
 								</fieldset>
 							</div>
-							
-							<hr>
 
 							<div class="filter-main-types">
 								<fieldset>
 									<legend>Питание:</legend>
 									<label for="cordless-drill">Аккумуляторные</label>
-									<input type="radio" id="cordless-drill">
+									<input type="radio" id="cordless-drill" name="cord-type" value="cordless">
 
 									<label for="corded-drill">Сетевые</label>
-									<input type="radio" id="corded-drill">
+									<input type="radio" id="corded-drill" name="cord-type" value="corded">
 								</fieldset>
 							</div>
 
-							<input type="submit" class="btn-filter">Показать</input>
+							<input type="submit" class="btn-filter" value="Показать"></input>
 						</div>
 					</form>
 					
@@ -177,7 +173,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -218,7 +214,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 2000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -239,7 +235,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -280,7 +276,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 2000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -301,7 +297,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -341,7 +337,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 2000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -446,6 +442,7 @@
 			</div>
 		</footer>
 		
+
 		<!-- модальное окно добавления в корзину -->
 		<section class="modal modal-item-added">
 

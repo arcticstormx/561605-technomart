@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	color: #000000;
+	font-family: 'Cuprum', 'PT Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	  
+	background-color: #ffffff;
+	background-position: top center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo-bar a {
+	color:#ffffff;
+}
+
+.main-header {
+	background-color: #f2f6f8;
+}
+
+
+header .logo-bar {
+	color: #ffffff;
+	font-size: 17px;
+	background-color: #293449;
+}
+
+.logo-header {
+	width: 220px;
+	height: 42px;
+}

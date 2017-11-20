@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Техномарт главная</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -10,14 +12,12 @@
 				<nav class="main-nav">
 
 					<!-- хедер панель с логотипом -->
-					<div>
+					<div class="logo-bar">
 						<span class="logo-header">Техномарт</span>
 						<div class="search-header">
-							<form action="/my-handling-form-page" method="post">
-								<div>
-									<label for="search-nav">Поиск:</label>
-									<input type="text" id="search-nav" name="search">
-								</div>
+							<form action="#" method="get">
+								<label for="search-nav">Поиск:</label>
+								<input type="text" id="search-nav" name="search">
 							</form>
 						</div>
 
@@ -172,7 +172,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -212,7 +212,7 @@
 								</a>
 							</h3>
 							<a href="item.html" class="catalog-item-img">
-								<img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+								<img src="img/bfg-23000.jpg" alt="Перфоратор BOSCH BFG 2000">
 							</a>
 							<div class="catalog-item-img-active">
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
@@ -288,7 +288,7 @@
 									сгоревший товар на&nbsp;новый.
 									Дом уж&nbsp;восстановите как-нибудь сами.
 								</p>
-								<img src="img/services=guarantee.png" alt="">
+								<img src="img/services-guarantee.png" alt="">
 							</li>
 
 							<li>
@@ -297,8 +297,8 @@
 								<p>Кредитные консультанты придут вам на помощь.</p>
 
 
-								<a class="services-btn-credit">Отправить заявку</a>
-								<img src="img/services-creding.png" alt="">
+								<img src="img/services-credit.png" alt="">
+								<a href="#" class="services-btn-credit">Отправить заявку</a>
 							</li>
 
 						</ol>
@@ -405,8 +405,7 @@
 
 			</div>
 		</footer>
-		
-		<!-- модальные окна: обратная связь и карта-->
+
 
 		<!-- модальное окно обратная связь -->
 		<section class="modal modal-feedback">
@@ -414,6 +413,7 @@
 			<h3 class="visually-hidden">Форма обратной связи</h3>
 
 			<div class="container-modal-feedback">
+
 				<form action="#" method="post">
 
 					<div>
@@ -432,7 +432,7 @@
 					</div>
 
 					<footer class="modal-feedback-footer">
-						<button type="submit" class="modal-btn-send">Отправить</button>
+						<input type="submit" class="modal-btn-send" value="Отправить"></input>
 					</footer>
 
 				</form>

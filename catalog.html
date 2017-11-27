@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Техномарт каталог</title>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body>
@@ -12,8 +12,8 @@
 				<nav class="main-nav">
 					
 					<!-- хедер панель с логотипом -->
-					<div class="logo-bar">
-						<span class="logo-header">Техномарт</span>
+					<div class="header-top">
+						<span class="logo">Техномарт</span>
 						<div class="search-header">
 							<form action="#" method="get">
 								<label for="search-nav">Поиск:</label>
@@ -22,22 +22,22 @@
 						</div>
 
 						<div class="user-navigation-btn">
-								<a href="bookmarks.html" class="user-nav-btn-bookmark">Закладки: 0</a>
-								<a href="shopping-cart.html" class="user-nav-btn-cart-active">Корзина: 10</a>
-								<a href="order.html" class="user-nav-btn-order-active">Оформить заказ</a>
+								<a href="bookmarks.html" class="btn-bookmark">Закладки: 0</a>
+								<a href="shopping-cart.html" class="btn-cart btn-cart-active">Корзина: 10</a>
+								<a href="order.html" class="btn-order btn-order-active">Оформить заказ</a>
 						</div>
 					</div>
 					
 					<!-- хедер панель с телефоном -->
-					<div>
-						<p>
+					<div class="header-mid">
+						<p class="motto">
 							Интернет-магазин
-							строительных материалов&lt;
+							строительных материалов 
 							и&nbsp;инструментов для ремонта
 						</p>
 
 						<div class="header-contacts">
-							<p class="header-phone-num"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+							<p class="header-phone"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
 							<p class="header-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						</div>
 						
@@ -81,9 +81,10 @@
 					<li><a href="#">Инструмент</a></li>
 					<li class="breadcrumbs-current"><a href="#">Перфораторы</a></li>
 				</ol>
-
-				<h1 class="page-title">Перфораторы</h1>
 				
+				<div class="page-title-container">
+					<h1 class="page-title">Перфораторы</h1>
+				</div>
 
 				<!-- фильтр начало -->
 				<section class="filter">
@@ -105,9 +106,13 @@
 
 						<form action="#" method="get">
 							<div class="filter-main-price">
+								
 
 								<label for="price-range">Цена:</label>
-								<input type="range" id="price-range" name="price-range" min="0" max="30000" step="1">
+
+								<div class="slider">
+									<input type="range" id="price-range" name="price-range" min="0" max="30000" step="1">
+								</div>
 
 								<div class="filter-price-range">
 									<input type="number" id="min-number" name="min-range" value="0">Минимальная цена
@@ -167,7 +172,7 @@
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 3000</span>
 								</a>
@@ -179,7 +184,7 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<div>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">22500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">15500 Р.</a>
 							</div>
@@ -187,7 +192,7 @@
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 6000</span>
 								</a>
@@ -199,16 +204,16 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">30500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">25500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<!-- товар с флажком -->
 						<li class="catalog-item catalog-item-new">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 2000</span>
 								</a>
@@ -221,15 +226,15 @@
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
 
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old"></b>
 								<a href="item.html" class="catalog-item-price-current">12500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 3000</span>
 								</a>
@@ -241,16 +246,16 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">22500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">15500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<!-- флажок новый товар -->
 						<li class="catalog-item catalog-item-new">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 6000</span>
 								</a>
@@ -262,15 +267,15 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">30500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">25500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 2000</span>
 								</a>
@@ -282,16 +287,16 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old"></b>
 								<a href="item.html" class="catalog-item-price-current">12500 Р.</a>
-							</p>
+							</div>
 						</li>
 						
 						<!-- товар с флажком -->
 						<li class="catalog-item catalog-item-new">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 3000</span>
 								</a>
@@ -303,15 +308,15 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">22500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">15500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 6000</span>
 								</a>
@@ -323,15 +328,15 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old">30500 Р.</b>
 								<a href="item.html" class="catalog-item-price-current">25500 Р.</a>
-							</p>
+							</div>
 						</li>
 
 						<li class="catalog-item">
 							<h3>
-								<a href="catalog-item.html">
+								<a href="catalog-item.html" class="item-name">
 									<span class="catalog-item-category">Перфоратор BOSCH</span>
 									<span class="catalog-item-model">BFG 2000</span>
 								</a>
@@ -343,10 +348,10 @@
 								<button type="button" class="catalog-item-btn-buy">Купить</button>
 								<button type="button" class="catalog-item-btn-bookmark">В закладки</button>
 							</div>
-							<p>
+							<div class="item-prices">
 								<b class="catalog-item-price-old"></b>
 								<a href="item.html" class="catalog-item-price-current">12500 Р.</a>
-							</p>
+							</div>
 						</li>
 					</ul>
 
@@ -380,13 +385,13 @@
 			<div class="container">
 				
 				<!-- футер верхняя панель -->
-				<section>
+				<section class="footer-mid">
 
-				<h2 class="visually-hidden">Техномарт навигация по разделам</h2>
+					<h2 class="visually-hidden">Техномарт навигация по разделам</h2>
 
 					<div>
 						<a class="logo">Техномарт</a>
-						<ul class="footer-site-navigation">
+						<ul class="footer-site-nav">
 							<li><a href="company.html">Компания</a></li>
 							<li><a href="news.html">Новости</a></li>
 							<li><a href="catalog.html">Каталог</a></li>
@@ -401,7 +406,7 @@
 							+7 (812) 555-05-55
 						</p>
 						
-						<ul class="footer-categories-navigation">
+						<ul class="footer-categories-nav">
 							<li><a href="materials.html">Материалы</a></li>
 							<li><a href="electronics.html">Техника</a></li>
 							<li><a href="instruments.html">Инструмент</a></li>
@@ -411,7 +416,7 @@
 				</section>
 				
 				<!-- футер нижняя панель -->
-				<section>
+				<section class="footer-bot">
 
 				<h3 class="visually-hidden">Техномарт в социальных сетях</h3>
 
@@ -428,12 +433,12 @@
 						</ul>
 					</div>
 
-					<p class="footer-developers-mail">
+					<p class="footer-devs-mail">
 						<b>Обратная связь:</b>
 						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</p>
 
-					<p class="footer-developers">
+					<p class="footer-devs">
 						<b>Разработано —</b>
 						<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 					</p>
@@ -459,8 +464,8 @@
 
 				<footer class="modal-item-added-footer">
 
-					<a href="order.html" class="modal-btn-order-item">Оформить заказ</a>
-					<button type="button" class="modal-btn-continue">Продолжить покупки</button>
+					<a href="order.html" class="index-btn modal-btn-order-item">Оформить заказ</a>
+					<button type="button" class="index-btn modal-btn-continue">Продолжить покупки</button>
 
 				</footer>
 

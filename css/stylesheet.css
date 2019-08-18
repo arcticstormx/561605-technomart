@@ -815,25 +815,62 @@ background-color: #b52933;
 
 
 .services {
+  height: 522px;
+
+  padding-top: 66px;
+  padding-bottom: 102px;
+
 	background-color: #f4f8f9;
 }
 
+.services-container {
+  position: relative;
+
+  flex-direction: column;
+}
+
 .services-intro {
+  display: flex;
+  flex-direction: column;
+
 	width: 100%;
+
 	margin-bottom: 74px;
 }
 
 .services-intro h2 {
-	color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
+
 	font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
 	font-family: 'Cuprum', 'Arial', sans-serif;
+
+	color: #000000;
+
+  text-transform: uppercase;
 }
 
 .services-intro p {
-	color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
+
 	font-size: 14px;
+	line-height: 1;
 	font-family: 'PT Sans', 'Arial', sans-serif;
-	line-height: 24px;
+
+	color: #000000;
+}
+
+.services-intro p:last-child {
+  margin: 0;
+}
+
+.services-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .services-btn-container {
@@ -841,15 +878,20 @@ background-color: #b52933;
 }
 
 .services-btn {
-	margin: 0;
-	padding: 0;
 	width: 240px;
-	color: #ffffff;
-	background-color: #32425c;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+
+	margin: 0;
+  margin-right: 80px;
+	padding: 0;
+
 	font-size: 21px;
-	font-weight: 700;
 	line-height: 30px;
+	font-weight: 700;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+
+	color: #ffffff;
+
+	background-color: #32425c;
 }
 
 .services-btn li {
@@ -860,7 +902,6 @@ background-color: #b52933;
 	width: 100%;
 	height: 100%;
 	padding-left: 22px;
-/*	padding-right: auto;*/
 	text-align: left;
 	border: none;
 }
@@ -877,25 +918,41 @@ background-color: #b52933;
 }
 
 .services-list {
-	/*position: relative;*/
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  margin: 0;
+  padding: 0;
 }
 
 .services-list li {
-	/*position: absolute;*/
+  display: flex;
+  flex-direction: column;
 }
 
-
-.services-list p {
-	color: #000000;
-	font-size: 13px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
-	line-height: 24px;
-}
 .services-names {
+  display: flex;
+
+  margin: 0;
+  margin-bottom: 19px;
+
 	color: #32425c;
 	font-size: 36px;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 
+  text-transform: uppercase;
+}
+
+.services-list p {
+  display: flex;
+
+  margin: 0;
+
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .company-info {

@@ -341,7 +341,7 @@
 							</div>
 
 							<ul class="services-list">
-								<li>
+								<!-- <li class="services-delivery">
 									<h3 class="services-names">Доставка</h3>
 									<p>
                     Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо<br>
@@ -349,28 +349,25 @@
 										Ведь мы&nbsp;неплохо заработаем,<br>
 										поднимая его на&nbsp;ваш этаж!
                   </p>
-									<!-- <img src="img/services-delivery-truck.png" alt=""> -->
-								</li>
+								</li> -->
 
-								<!-- <li>
+								<!-- <li class="services-guarantee">
 									<h3 class="services-names">Гарантия</h3>
 									<p>
-										Если купленный у&nbsp;нас товар поломается или заискрит,
-										а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгаранием,
-										вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы&nbsp;обменяем
-										сгоревший товар на&nbsp;новый.
+										Если купленный у&nbsp;нас товар поломается или заискрит,<br>
+										а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгаранием,<br>
+										вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы&nbsp;обменяем<br>
+										сгоревший товар на&nbsp;новый.<br>
 										Дом уж&nbsp;восстановите как-нибудь сами.
 									</p>
-									<img src="img/services-guarantee.png" alt="">
-								</li>
+								</li> -->
 
-								<li>
+								<li class="services-credit">
 									<h3 class="services-names">Кредит</h3>
 									<p>Залезть в долговую яму стало проще!</p>
 									<p>Кредитные консультанты придут вам на помощь.</p>
-									<img src="img/services-credit.png" alt="">
 									<a href="#" class="basic-btn credit-btn">Отправить заявку</a>
-								</li> -->
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -397,13 +394,14 @@
 							</ul>
 							<a class="basic-btn" href="#">Подробнее о компании</a>
 						</div>
+
 						<div class="contacts">
 							<h2>Контакты</h2>
 							<p>
-								Вы можете забрать товар сами,
+								Вы можете забрать товар сами,<br>
 								заехав&nbsp;в наш офим:
 							</p>
-							<button type="button" class="contacts-map-btn" value="Карта"></button>
+							<img class="contacts-map" src="img/map-small.png" alt="Карта" width="300" height="158">
 							<a class="basic-btn" href="#">Заблудились? Напишите нам!<</a>
 						</div>
 					</div>
@@ -413,16 +411,18 @@
 
 		<!-- начало футера -->
 		<footer class="main-footer">
-			<div class="container">
 
-				<!-- футер верхняя панель -->
-				<section class="footer-mid">
+			<!-- футер верхняя панель -->
+			<section class="footer-top">
+  			<div class="container">
 
 					<h2 class="visually-hidden">Техномарт навигация по разделам</h2>
 
-					<div>
-						<a class="logo">Техномарт</a>
-						<ul class="footer-site-nav">
+					<div class="footer-top-upper">
+            <div class="footer-logo-container">
+  						<a class="footer-logo">Техномарт</a>
+            </div>
+						<ul class="footer-pages-nav">
 							<li><a href="company.html">Компания</a></li>
 							<li><a href="news.html">Новости</a></li>
 							<li><a href="catalog.html">Каталог</a></li>
@@ -431,9 +431,9 @@
 						</ul>
 					</div>
 
-					<div>
+					<div class="footer-top-lower">
 						<p class="footer-contacts">
-							г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 							+7 (812) 555-05-55
 						</p>
 
@@ -444,53 +444,52 @@
 							<li><a href="specials.html">Спецпредложения</a></li>
 						</ul>
 					</div>
-				</section>
+        </div>
+			</section>
 
-				<!-- футер нижняя панель -->
-				<section class="footer-bot">
+			<!-- футер нижняя панель -->
+			<section class="footer-bottom">
+        <div class="container">
 
-				<h3 class="visually-hidden">Техномарт в социальных сетях</h3>
+  				<h3 class="visually-hidden">Техномарт в социальных сетях</h3>
 
-					<p class="footer-copyright">
-						© 2010-2017 Компания «Техномарт»<br>
-						Все права защищены
-					</p>
+  					<p class="footer-copyright">
+  						© 2010-2017 Компания «Техномарт»<br>
+  						Все права защищены
+  					</p>
 
-					<div class="footer-social-links">
-						<ul>
-							<li>
-								<a class="social-button-vk" href="#">
-									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
-									<span class="visually-hidden">Мы в Вконтакте</span>
-								</a>
-							</li>
-							<li>
-								<a class="social-button-fb" href="#">
-									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
-									<span class="visually-hidden">Мы в Фейсбуке</span>
-								</a>
-							</li>
-							<li>
-								<a class="social-button-insta" href="#">
-									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
-									<span class="visually-hidden">Мы в Инстаграмме</span>
-								</a>
-							</li>
-						</ul>
-					</div>
+  						<ul class="footer-social-links">
+  							<li>
+  								<a class="social-button-vk" href="#">
+  									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+  									<span class="visually-hidden">Мы в Вконтакте</span>
+  								</a>
+  							</li>
+  							<li>
+  								<a class="social-button-fb" href="#">
+  									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+  									<span class="visually-hidden">Мы в Фейсбуке</span>
+  								</a>
+  							</li>
+  							<li>
+  								<a class="social-button-insta" href="#">
+  									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+  									<span class="visually-hidden">Мы в Инстаграмме</span>
+  								</a>
+  							</li>
+  						</ul>
 
-					<p class="footer-devs-mail">
-						<b>Обратная связь:</b>
-						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-					</p>
+  					<div class="footer-feedback">
+  						<span>Обратная связь:</span>
+  						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+  					</div>
 
-					<p class="footer-devs">
-						<b>Разработано —</b>
-						<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-					</p>
-				</section>
-
-			<!-- </div> -->
+  					<div class="footer-copyright-link">
+  						<span>Разработано —</span>
+  						<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+  					</div>
+          </div>
+			</section>
 		</footer>
 
 
@@ -533,17 +532,13 @@
 		</section>
 
 		<!-- модальное окно "карта" -->
-		<section class="modale modal-map">
-
+		<!-- <section class="modale modal-map">
 			<h3 class="visually-hidden">Карта проезда</h3>
-
 			<img src="img/map-big.jpg" alt="Развёрнутая карта">
 			<button type="button" class="modal-btn-close">
 				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z"/></svg>
 				<span class="visually-hidden">Закрыть карту</span>
 			</button>
-
-		</section>
-
+		</section> -->
 	</body>
 </html>

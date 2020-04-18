@@ -169,6 +169,16 @@ body ol {
 	line-height: 42px;
 }
 
+.main-header .logo:focus,
+.main-header .logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-header .logo:active {
+  background-color: #ba2732;
+}
+
+
 .main-header .logo::before {
 position: absolute;
 content: "";
@@ -182,6 +192,19 @@ height: 5px;
 background-color: #b52933;
 }
 
+.main-header .logo:hover::before,
+.main-header .logo:focus::before {
+  background-color: #9a212a;
+}
+
+.main-header .logo:active::before {
+  background-color: #8e1e26;
+}
+
+.main-header .logo-self {
+  padding: 10px 55px 12px;
+}
+
 .search-header {
 	margin-left: 17px;
 }
@@ -189,12 +212,22 @@ background-color: #b52933;
 .search-header form {
 	max-height: 42px;
 }
-.search-header input {
-	display: none;
+
+.search-header label {
+  margin-right: 10px;
 }
 
 .search-header svg {
 	margin-right: 15px;
+}
+
+#search-self {
+  width: 140px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Cuprum';
+  font-size: 14px;
 }
 
 .user-navigation-btn {
@@ -309,7 +342,6 @@ background-color: #b52933;
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
-	box-sizing: content-box;
 	background-color: #32425c;
 	height: 55px;
 	font-size: 17px;

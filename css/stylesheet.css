@@ -206,7 +206,16 @@ background-color: #b52933;
 }
 
 .search-header {
-	margin-left: 17px;
+	padding-left: 17px;
+  padding-right: 66.75px;
+}
+
+.search-header:hover {
+  background-color: #212a3a;
+}
+
+.search-header:hover svg {
+  opacity: 1;
 }
 
 .search-header form {
@@ -230,11 +239,23 @@ background-color: #b52933;
   font-size: 14px;
 }
 
+#search-self::placeholder {
+  color: #fff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#search-self:focus::placeholder {
+  color: transparent;
+
+}
+
 .user-navigation-btn {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	margin-left: auto;
 }
 
 .user-navigation-btn li {
@@ -247,15 +268,11 @@ background-color: #b52933;
 	margin-right: 13px;
 }
 
-.btn-cart {
-	margin-left: 10px;
-}
 .btn-cart svg {
 	margin-right: 17px;
 }
 
 .btn-order {
-	margin-left: 10px;
 	background-color: #63a63e;
 }
 

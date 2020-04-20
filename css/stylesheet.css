@@ -119,11 +119,6 @@ body ol {
 	flex-wrap: wrap;
 }
 
-/*.wrapper {
-  width: 940px;
-  margin: 0 auto;
-}*/
-
 /*начало общего хедера*/
 
 .main-header {
@@ -133,6 +128,7 @@ body ol {
 	height: 320px;
 }
 
+
 .main-nav {
 	display: flex;
 	flex-direction: column;
@@ -140,11 +136,9 @@ body ol {
 }
 
 .header-top {
-	display: flex;
 	background-color: #293449;
 	width: 100%;
-	min-height: 42px;
-	line-height: 42px;
+	height: 42px;
 	margin-bottom: 46px;
 }
 
@@ -158,15 +152,15 @@ body ol {
 
 .main-header .logo {
 	position: relative;
+  display: flex;
+	width: 220px;
+
 	color: #ffffff;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 	font-size: 24px;
 	text-transform: uppercase;
 	text-align: center;
 	background-color: #ee3643;
-	width: 220px;
-	max-height: 47px;
-	line-height: 42px;
 }
 
 .main-header .logo:focus,
@@ -202,12 +196,15 @@ background-color: #b52933;
 }
 
 .main-header .logo-self {
-  padding: 10px 55px 12px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-header {
-	padding-left: 17px;
-  padding-right: 66.75px;
+  display: flex;
+  width: 270px;
 }
 
 .search-header:hover {
@@ -218,25 +215,47 @@ background-color: #b52933;
   opacity: 1;
 }
 
+.search-header:focus-within {
+  background-color: #fff;
+}
+
+.search-header:focus-within #search-self {
+  color: #000;
+}
+
+.search-header:focus-within svg {
+  fill: red;
+  opacity: 1;
+}
+
 .search-header form {
-	max-height: 42px;
+  display: flex;
+  flex-grow: 1;
 }
 
 .search-header label {
-  margin-right: 10px;
+  display: flex;
+  flex-grow: 1;
 }
 
 .search-header svg {
-	margin-right: 15px;
+  fill: #fff;
+  margin: 12px 15px 0 17px;
 }
 
 #search-self {
   width: 140px;
+  padding: 0;
   border: none;
   background-color: transparent;
   color: #fff;
   font-family: 'Cuprum';
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#search-self:focus {
+  outline: none;
 }
 
 #search-self::placeholder {
@@ -252,16 +271,41 @@ background-color: #b52933;
 
 }
 
-.user-navigation-btn {
+.user-navigation-list {
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
 
-.user-navigation-btn li {
+.user-navigation-list li {
+  display: flex;
 	min-width: 150px;
-	min-height: 42px;
+	height: 42px;
 	text-align: center;
+}
+
+.user-nav-btn {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nav-btn:hover {
+  background-color: #212a3a;
+}
+
+.user-nav-btn:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 0, 0.6);
+}
+
+.user-nav-btn:hover svg {
+  opacity: 1;
+}
+
+.user-nav-btn:active svg {
+  opacity: 0.5;
 }
 
 .btn-bookmark svg {
@@ -274,6 +318,14 @@ background-color: #b52933;
 
 .btn-order {
 	background-color: #63a63e;
+}
+
+.btn-order:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-order:active {
+  background-color: #518534;
 }
 
 .header-mid {
@@ -333,15 +385,26 @@ background-color: #b52933;
 
 .header-mid .header-user-btn {
 	text-align: center;
-	width: 121px;
 	height: 45px;
-	line-height: 45px;
 	background-color: #ffffff;
 }
 
 .header-mid .header-user-btn a {
+  display: flex;
 	color: #000000;
 	font-size: 21px;
+  line-height: 1;
+}
+
+.login-btn {
+  padding: 10.5px 26px 10.5px 14px;
+}
+
+.login-btn svg {
+}
+
+.register-btn {
+  padding: 10.5px 24.075px;
 }
 
 .header-user-links a {
@@ -390,7 +453,6 @@ background-color: #b52933;
 }
 
 .categories .container {
-	display: flex;
 	flex-direction: column;
 }
 

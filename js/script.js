@@ -49,3 +49,29 @@ servicesCreditBtn.addEventListener("click", (evt) => {
   servicesCredit.classList.add("active");
 });
 
+var mapLink = document.querySelector(".contacts-map");
+var mapPopup = document.querySelector(".modal-map");
+var modalClose = mapPopup.querySelector(".modal-close");
+var overlay = document.querySelector(".overlay");
+
+mapLink.addEventListener("click", (evt) => {
+  mapPopup.classList.add("modal-show");
+  overlay.classList.add("overlay-show");
+  document.querySelector("body").classList.add("stop-scroll");
+});
+
+modalClose.addEventListener("click", (evt) => {
+  mapPopup.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
+  document.querySelector("body").classList.remove("stop-scroll");
+});
+
+window.addEventListener("keydown", (evt) => {
+  if (evt.KeyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+      overlay.classList.remove("overlay-show");
+    }
+  }
+});
+

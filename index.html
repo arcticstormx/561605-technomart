@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <div class="overlay"></div>
   <header class="main-header">
     <nav class="main-nav">
       <!-- хедер панель с логотипом -->
@@ -406,7 +405,7 @@
             заехав&nbsp;в наш офим:
           </p>
           <img class="contacts-map" src="img/map-small.png" alt="Карта" width="300" height="158" tabindex="-1">
-          <a class="basic-btn" href="#">Заблудились? Напишите нам!</a>
+          <button class="basic-btn contacts-feedback" type="button">Заблудились? Напишите нам!</button>
         </div>
       </div>
     </section>
@@ -484,8 +483,31 @@
   </footer>
   <section class="modal modal-map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="447" allowfullscreen></iframe>
-    <button class="modal-close" type="button"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
   </section>
+  <div class="overlay">
+    <section class="modal modal-feedback">
+      <button class="modal-close" type="button"></button>
+      <form class="feedback-form" action="">
+        <label class="feedback-label half-width" for="feedback-name">
+          Ваше имя:
+          <input class="feedback-input" name="feedback-name" id="feedback-name" type="text" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label class="feedback-label half-width" for="feedback-email">
+          Ваша фамилия:
+          <input class="feedback-input" name="feedback-email" id="feedback-email" type="text" placeholder="Для отправки ответа">
+        </label>
+        <label class="feedback-label" for="feedback-message">
+          Текст письма:
+          <textarea class="feedback-input feedback-message" name="feedback-message" id="feedback-message" cols="10" rows="10" placeholder="В свободной форме"></textarea>
+        </label>
+        <div class="feedback-submit-container">
+          <button class="basic-btn feedback-submit" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 

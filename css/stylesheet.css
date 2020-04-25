@@ -526,6 +526,15 @@ background-color: #b52933;
 	background-color: #ffffff;
 }
 
+.login-btn {
+  position: relative;
+  display: flex;
+  padding: 12.1px 26px 12.1px 46px;
+  font-size: 21px;
+  line-height: 1;
+  color: #000;
+}
+
 .login-btn:hover,
 .register-btn:hover {
   color: #ee3643;
@@ -537,24 +546,15 @@ background-color: #b52933;
   color: #000;
 }
 
-.login-btn:hover svg {
-  opacity: 1;
-}
-
-.login-btn {
-  position: relative;
-  display: flex;
-  padding: 12.1px 26px 12.1px 46px;
-  font-size: 21px;
-  line-height: 1;
-  color: #000;
-}
-
-.login-btn svg {
+.login-icon {
   position: absolute;
   top: 13px;
   left: 14px;
   opacity: 0.3;
+}
+
+.login-btn:hover .login-icon {
+  opacity: 1;
 }
 
 .register-btn {
@@ -659,18 +659,19 @@ background-color: #b52933;
 	position: relative;
 
 	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-end;
+  flex-direction: column;
 	flex: 0 1 300px;
 
-	height: 121px;
+	height: 123px;
 
-	padding: 0 130px 22px 25px;
+	padding: 22px 130px 22px 25px;
 }
 
 .categories-block h3 {
 	margin: 0;
 	margin-right: auto;
+  margin-left: -2px;
+  margin-bottom: 5px;
 
 	font-size: 24px;
 	line-height: 1;
@@ -683,11 +684,10 @@ background-color: #b52933;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex: 0 1 135px;
+  margin-top: auto;
 
 	height: 38px;
-
-	margin-right: auto;
+  width: 135px;
 
 	font-size: 14px;
 	line-height: 1;
@@ -812,25 +812,6 @@ background-color: #b52933;
 	flex: 0 0 620px;
 }
 
-.slider h3 {
-	margin: 0;
-  margin-bottom: 5px;
-
-	font-size: 36px;
-	line-height: 1;
-	font-weight: 700;
-
-	text-transform: uppercase;
-}
-
-.slider p {
-	margin: 0;
-
-	font-size: 18px;
-	line-height: 1;
-	font-weight: 400;
-}
-
 .slider-wrapper {
   position: relative;
 
@@ -869,6 +850,30 @@ background-color: #b52933;
 	background-color: #9b9691;
 }
 
+.slider-item-text {
+
+}
+
+.slider-item-title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.slider-item-subtitle {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+}
+
 .slider-arrow {
   position: absolute;
 
@@ -892,7 +897,7 @@ background-color: #b52933;
 
 .slider-arrow-right {
   bottom: 112px;
-  right: 25px;
+  right: 20px;
 }
 
 .slider-btn-container {
@@ -941,28 +946,33 @@ background-color: #b52933;
 }
 
 .section-header {
+  padding: 25px 24px 26px 25px;
 	width: 100%;
 	height: 89px;
 	background-color: #f9f5f0;
 	display: flex;
 }
 
-.section-header h2 {
-	color: #32425c;
+.section-header-title {
+  margin: 0;
+  margin-top: 5px;
+
 	font-size: 30px;
-	text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
 	font-family: 'Cuprum', 'Arial', sans-serif;
-	margin-left: 30px;
+	text-transform: uppercase;
+	color: #32425c;
 }
-.section-header a {
+
+.section-header-link {
 	height: 38px;
 	width: 253px;
+
+	margin-left: auto;
+
 	line-height: 38px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: 24px;
-	margin-top: auto;
-	margin-bottom: auto;
 }
 
 .catalog .section-header {
@@ -1108,6 +1118,7 @@ background-color: #b52933;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
 
   color: #000;
 }
@@ -1122,6 +1133,7 @@ background-color: #b52933;
   font-size: 17px;
   line-height: 1;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
 }
 
 .catalog-item-price-old {
@@ -1136,9 +1148,6 @@ background-color: #b52933;
 
 .catalog-item-price-current {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   width: 122px;
   height: 38px;
@@ -1146,6 +1155,9 @@ background-color: #b52933;
   margin-bottom: 1px;
   margin-left: 6px;
   margin-right: 19px;
+
+  padding-top: 11px;
+  padding-left: 36px;
 
   color: #fff;
   border-radius: 3px;
@@ -1183,7 +1195,6 @@ background-color: #b52933;
 }
 
 .pop-brands .section-header {
-	margin-top: 21px;
 	margin-bottom: 20px;
 }
 
@@ -1191,11 +1202,14 @@ background-color: #b52933;
 }
 
 .brand-logos {
-	padding: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 64px;
+	padding: 0;
 }
 
 .brand-logos li {
@@ -1326,7 +1340,7 @@ background-color: #b52933;
 
 	font-size: 30px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 
 	color: #000000;
@@ -1380,8 +1394,12 @@ background-color: #b52933;
   cursor: pointer;
 }
 
-.services-btn li {
+.services-btn-container {
 	height: 61px;
+}
+
+.services-btn-container:last-child .services-btn-self {
+  border-bottom: none;
 }
 
 .services-shadow {
@@ -1398,8 +1416,7 @@ background-color: #b52933;
 
 .services-btn-self {
   border: none;
-  border-top: 1px solid #405069;
-  border-bottom: 1px solid #293449;
+  border-bottom: 1px solid #4e637c;
   width: 100%;
   height: 100%;
   padding-left: 22px;
@@ -1434,7 +1451,7 @@ background-color: #b52933;
   content: "";
 
   position: absolute;
-  top: 23px;
+  top: 24px;
   right: 0;
 
   z-index: 5;
@@ -1449,7 +1466,7 @@ background-color: #b52933;
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 3px;
   right: -8px;
 
   z-index: 5;
@@ -1460,17 +1477,18 @@ background-color: #b52933;
   background: no-repeat center url("../img/guarantee.png");
 }
 
-.services-credit a {
+.credit-btn {
   width: 195px;
 
-  margin-top: auto;
+  margin-top: 27px;
+  background-color: #ff5357;
 }
 
 .services-credit::before {
   content: "";
 
   position: absolute;
-  top: -3px;
+  top: 0px;
   right: -10px;
 
   z-index: 5;
@@ -1485,11 +1503,13 @@ background-color: #b52933;
   display: flex;
 
   margin: 0;
+  margin-top: -2px;
   margin-bottom: 19px;
 
 	color: #32425c;
 	font-size: 36px;
 	font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 400;
 
   text-transform: uppercase;
 }
@@ -1523,6 +1543,7 @@ background-color: #b52933;
 
 	font-size: 30px;
   line-height: 1;
+  font-weight: 400;
 	font-family: 'Cuprum', 'Arial', sans-serif;
   text-transform: uppercase;
 }
@@ -1555,13 +1576,12 @@ background-color: #b52933;
 
 .company a {
   width: 220px;
-
-  margin-top: auto;
 }
 
 .delivery-list {
   margin: 0;
   margin-top: 25px;
+  margin-bottom: 20px;
   padding: 0;
 
   font-size: 18px;
@@ -1605,7 +1625,7 @@ background-color: #b52933;
 }
 
 .contacts h2 {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
 	font-size: 30px;
   line-height: 1;
@@ -1616,7 +1636,7 @@ background-color: #b52933;
 
 .contacts p {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 32px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1823,7 +1843,7 @@ background-color: #b52933;
   flex-flow: row wrap;
   justify-content: space-between;
 
-  margin-bottom: 60px;
+  margin-bottom: 21px;
 }
 
 .catalog-filter {
@@ -2183,10 +2203,6 @@ background-color: #b52933;
   flex: 0 1 700px;
 }
 
-.catalog .catalog-item {
-  margin-bottom: 20px;
-}
-
 .pagination-container {
   display: flex;
   flex-direction: row;
@@ -2521,7 +2537,7 @@ background-color: #b52933;
 .footer-feedback span,
 .footer-copyright-link span {
   font-size: 16px;
-  line-height: 1;
+  line-height: 18px;
   font-weight: 400;
 
   color: #fff;
@@ -2530,7 +2546,7 @@ background-color: #b52933;
 .footer-feedback a,
 .footer-copyright-link a {
   font-size: 16px;
-  line-height: 1;
+  line-height: 18px;
 
   color: #ffd180;
 }
@@ -2575,19 +2591,27 @@ background-color: #b52933;
 .modal-map {
   display: none;
   position: fixed;
+
+  width: 940px;
+  height: 447px;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  background-image: url("../img/map-big.png");
 }
 
 .modal-map iframe {
+  display: none;
   border: none;
+  z-index: 102;
 }
 
 .modal-map .modal-close {
   top: 9px;
   right: 9px;
+  z-index: 103;
 }
 
 .modal-show {
@@ -2623,14 +2647,14 @@ background-color: #b52933;
   flex-direction: row;
   flex-wrap: wrap;
   width: 620px;
-  height: 427px;
+  height: 430px;
   background: #fff;
-  padding: 46px 80px 150px 80px;
+  padding: 47px 80px 150px 80px;
   border-top: 7px solid #ff5357;
 }
 
 .modal-feedback .modal-close {
-  top: 16px;
+  top: 9px;
   right: 9px;
   width: 21px;
   height: 21px;
@@ -2661,12 +2685,12 @@ background-color: #b52933;
 }
 
 .feedback-label:last-of-type {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .feedback-input {
-  margin-top: 12px;
-  padding: 8px 12px;
+  margin-top: 9px;
+  padding: 8px 14px;
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 13px;

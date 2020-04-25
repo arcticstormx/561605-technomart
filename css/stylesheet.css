@@ -2597,9 +2597,10 @@ background-color: #b52933;
 
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
-  background-image: url("../img/map-big.png");
+  background-image: url("../img/map-big.jpg");
 }
 
 .modal-map iframe {
@@ -2612,10 +2613,6 @@ background-color: #b52933;
   top: 9px;
   right: 9px;
   z-index: 103;
-}
-
-.modal-show {
-  display: flex;
 }
 
 .modal-feedback .modal-show {
@@ -2714,15 +2711,103 @@ background-color: #b52933;
 .feedback-submit-container {
   display: flex;
   position: absolute;
-  width: 100%;
-  padding: 37px 80px;
+
   bottom: 0;
   left: 0;
+
+  padding: 37px 80px;
+  width: 100%;
   background-color: #f4f4f4;
 }
 
 .feedback-submit {
   width: 460px;
+}
+
+.modal-cart {
+  display: none;
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  margin-top: -141px;
+  margin-left: -310px;
+
+  width: 620px;
+  height: 282px;
+
+  background-color: #fff;
+  border-top: 7px solid #ff5357;
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.modal-cart-text {
+  position: absolute;
+
+  top: 66.5px;
+  left: 179px;
+
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Cuprum", sans-serif;
+}
+
+.modal-cart-text::before {
+  position: absolute;
+  content: '';
+
+  width: 66px;
+  height: 66px;
+
+  top: -18px;
+  left: -99px;
+  background-image: url("../img/form-1.svg");
+}
+
+.modal-cart-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.modal-cart-btn {
+  width: 220px;
+}
+
+.modal-cart-btn-order {
+  margin-right: 20px;
+}
+
+.modal-cart-btn-continue {
+  color: #000;
+  background-color: #fff;
+}
+
+.modal-cart-btn-continue:hover,
+.modal-cart-btn-continue:focus,
+.modal-cart-btn-continue:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.modal-cart .modal-close {
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+}
+
+.modal-show {
+  display: flex;
 }
 
 @keyframes bounce {
